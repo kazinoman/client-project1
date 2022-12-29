@@ -5,11 +5,6 @@ const About = ({ data }) => {
   return (
     <div>
       <div>about us.</div>
-      {data?.map?.((data) => (
-        <>
-          <h1>{data.title}</h1>
-        </>
-      ))}
     </div>
   );
 };

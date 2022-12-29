@@ -1,9 +1,9 @@
-import WebLayout from "../layouts/WebLayout";
+import WebLayout from "/layouts/WebLayout";
 
 export default function App({ Component, pageProps }) {
-	return (
-		<WebLayout>
-			<Component {...pageProps} />
-		</WebLayout>
-	);
+  return (
+    <WebLayout>
+      <Component {...pageProps} />
+    </WebLayout>
+  );
 }
