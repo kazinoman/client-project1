@@ -15,6 +15,50 @@ const WebLayout = ({ children }) => {
             height: "100vh",
             overflow: "hidden",
             overflowY: "auto",
+            scrollBehavior: "smooth",
+            scrollbarWidth: "5px",
+            scrollbarHeight: "5px",
+            scrollbarColor: `#808080`, // thumb & track
+            "& a": {
+              textDecoration: "none", // remove the text decoration globally
+            },
+            "& a:not(.MuiButton-root)": {
+              color: "unset",
+            },
+            // scrollbar
+            "*": {
+              scrollbarWidth: "5px",
+              scrollbarHeight: "5px",
+              scrollbarColor: `#808080`,
+            },
+            "*::-webkit-scrollbar": {
+              width: "5px",
+              height: "5px",
+            },
+            "*::-webkit-scrollbar-track": {
+              background: "#00000033",
+            },
+            "*::-webkit-scrollbar-thumb": {
+              background: "#808080",
+              borderRadius: "20px",
+            },
+            "*::-webkit-scrollbar-thumb:hover": {
+              background: "#808080",
+            },
+            // App Body Scrollbar
+            "&::-webkit-scrollbar": {
+              width: "5px",
+              height: "5px",
+            },
+            "&::-webkit-scrollbar-track": {
+              background: "#00000033",
+            },
+            "&::-webkit-scrollbar-thumb": {
+              background: `#808080`,
+            },
+            "&::-webkit-scrollbar-thumb:hover": {
+              background: `#808080`,
+            },
           }}
         >
           <Header />

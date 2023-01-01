@@ -92,6 +92,7 @@ const SingleCardForPromotion = ({ image, title, details }) => {
                 textTransform: "none",
                 fontSize: "16px",
                 p: 1.2,
+                width: { xs: "100%", md: "10rem" },
               }}
             >
               Show all deals
