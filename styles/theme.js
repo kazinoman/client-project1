@@ -1,103 +1,120 @@
-import { createTheme } from '@mui/material/styles'
+import { createTheme } from "@mui/material/styles";
 
 const theme = createTheme({
   palette: {
     primary: {
-      main: '#18BABD',
+      main: "#18BABD",
     },
     secondary: {
-      main: '#3C4A6D',
+      main: "#3C4A6D",
     },
     buttonColor: {
-      main: '#9C2F86',
+      main: "#9C2F86",
     },
   },
   typography: {
-    fontFamily: 'Roboto, Lato, sans-serif',
+    fontFamily: "Roboto, Lato, sans-serif",
   },
-})
+});
 
 theme.typography.large = {
-  fontWeight: 'bold',
-  color: '#fff',
-  [theme.breakpoints.up('md')]: {
-    fontSize: '3rem',
+  fontWeight: "bold",
+  color: "#fff",
+  [theme.breakpoints.up("md")]: {
+    fontSize: "3rem",
   },
-  [theme.breakpoints.only('sm')]: {
-    fontSize: '2rem',
+  [theme.breakpoints.only("sm")]: {
+    fontSize: "2rem",
   },
-  [theme.breakpoints.down('sm')]: {
-    fontSize: '2rem',
+  [theme.breakpoints.down("sm")]: {
+    fontSize: "2rem",
   },
-}
+};
 theme.typography.title = {
-  fontWeight: '700',
-  color: '#000',
-  [theme.breakpoints.up('md')]: {
-    fontSize: '1.5rem',
+  fontWeight: "700",
+  color: "#000",
+  [theme.breakpoints.up("md")]: {
+    fontSize: "1.5rem",
   },
-  [theme.breakpoints.only('sm')]: {
-    fontSize: '1rem',
+  [theme.breakpoints.only("sm")]: {
+    fontSize: "1rem",
   },
-  [theme.breakpoints.down('sm')]: {
-    fontSize: '1rem',
+  [theme.breakpoints.down("sm")]: {
+    fontSize: "1rem",
   },
-}
+};
 
 theme.typography.small = {
-  fontWeight: '400',
-  color: '#fff',
-  [theme.breakpoints.up('md')]: {
-    fontSize: '1.2rem',
+  fontWeight: "400",
+  color: "#fff",
+  [theme.breakpoints.up("md")]: {
+    fontSize: "1.2rem",
   },
-  [theme.breakpoints.only('md')]: {
-    fontSize: '1rem',
+  [theme.breakpoints.only("md")]: {
+    fontSize: "1rem",
   },
-  [theme.breakpoints.down('sm')]: {
-    fontSize: '1rem',
+  [theme.breakpoints.down("sm")]: {
+    fontSize: "1rem",
   },
-}
+};
 
 theme.typography.extraSmall = {
-  fontWeight: '400',
-  color: '#fff',
-  [theme.breakpoints.up('md')]: {
-    fontSize: '1rem',
+  fontWeight: "400",
+  color: "#fff",
+  [theme.breakpoints.up("md")]: {
+    fontSize: "1rem",
   },
-  [theme.breakpoints.only('md')]: {
-    fontSize: '0.9rem',
+  [theme.breakpoints.only("md")]: {
+    fontSize: "0.9rem",
   },
-  [theme.breakpoints.down('sm')]: {
-    fontSize: '0.9rem',
+  [theme.breakpoints.down("sm")]: {
+    fontSize: "0.9rem",
   },
-}
+};
 
 theme.typography.normal = {
-  fontWeight: '400',
-  color: '#000',
-  [theme.breakpoints.up('md')]: {
-    fontSize: '1rem',
+  fontWeight: "400",
+  color: "#000",
+  [theme.breakpoints.up("md")]: {
+    fontSize: "1rem",
   },
-  [theme.breakpoints.only('md')]: {
-    fontSize: '0.9rem',
+  [theme.breakpoints.only("md")]: {
+    fontSize: "0.9rem",
   },
-  [theme.breakpoints.down('sm')]: {
-    fontSize: '0.9rem',
+  [theme.breakpoints.down("sm")]: {
+    fontSize: "0.9rem",
   },
-}
+};
 
 theme.typography.aboutNormal = {
-  fontWeight: '400',
-  color: '#000',
-  [theme.breakpoints.up('md')]: {
-    fontSize: '1.2rem',
+  fontWeight: "400",
+  color: "#000",
+  [theme.breakpoints.up("md")]: {
+    fontSize: "1.2rem",
   },
-  [theme.breakpoints.only('md')]: {
-    fontSize: '1rem',
+  [theme.breakpoints.only("md")]: {
+    fontSize: "1rem",
   },
-  [theme.breakpoints.down('sm')]: {
-    fontSize: '1rem',
+  [theme.breakpoints.down("sm")]: {
+    fontSize: "1rem",
   },
-}
+};
+// card content
+theme.typography.cardTitle = {
+  fontWeight: "400",
+  color: "#000",
+  [theme.breakpoints.only("lg")]: {
+    fontSize: "24px",
+  },
+  [theme.breakpoints.only("md")]: {
+    fontSize: "18px",
+  },
+  [theme.breakpoints.down("sm")]: {
+    fontSize: "16px",
+  },
+  [theme.breakpoints.down("xs")]: {
+    fontSize: "14px",
+  },
+};
 
-export default theme
+export default theme;

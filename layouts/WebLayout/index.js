@@ -1,8 +1,8 @@
-import React from 'react'
-import { Container, Stack, ThemeProvider, CssBaseline } from '@mui/material'
-import theme from '@/styles/theme'
-import Header from './Header'
-import Footer from './Footer'
+import React from "react";
+import { Container, Stack, ThemeProvider, CssBaseline } from "@mui/material";
+import theme from "@/styles/theme";
+import Header from "./Header";
+import Footer from "./Footer";
 
 const WebLayout = ({ children }) => {
   return (
@@ -10,16 +10,16 @@ const WebLayout = ({ children }) => {
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <Stack
-          direction={'column'}
+          direction={"column"}
           sx={{
-            height: '100vh',
-            overflow: 'hidden',
-            overflowY: 'auto',
+            height: "100vh",
+            overflow: "hidden",
+            overflowY: "auto",
           }}
         >
           <Header />
           <Container
-            maxWidth={'100vw'}
+            maxWidth={"100vw"}
             // flexGrow={1}
             sx={{
               flexGrow: 1,
@@ -34,7 +34,7 @@ const WebLayout = ({ children }) => {
         </Stack>
       </ThemeProvider>
     </>
-  )
-}
+  );
+};
 
-export default WebLayout
+export default WebLayout;

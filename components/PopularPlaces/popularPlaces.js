@@ -5,29 +5,42 @@ import {
   Paper,
   Rating,
   Stack,
-} from '@mui/material'
-import Card from '@mui/material/Card'
-import CardActions from '@mui/material/CardActions'
-import CardContent from '@mui/material/CardContent'
-import CardMedia from '@mui/material/CardMedia'
-import React from 'react'
-import PopularPlaceCard from './polularPlaceCard'
+  Box,
+} from "@mui/material";
+import Card from "@mui/material/Card";
+import CardActions from "@mui/material/CardActions";
+import CardContent from "@mui/material/CardContent";
+import CardMedia from "@mui/material/CardMedia";
+import React from "react";
+import PopularPlaceCard from "./polularPlaceCard";
 
 const PopularPlacesCard = () => {
   return (
-    <Container
-      maxWidth={'md'}
-      disableGutters
-      sx={{ my: 10, p: { xs: '10px', md: '0px' }, }}
+    <Box
+      sx={{
+        width: { lg: "90%", sm: "90%", xs: "95%" },
+        mx: "auto",
+        maxWidth: "900px",
+      }}
+      // maxWidth={"md"}
+      // disableGutters
+      // sx={{ my: 10, p: { xs: "10px", md: "0px" } }}
     >
       <Typography variant="title">Most popular things to do</Typography>
 
-      <Grid container spacing={2} mt={0.2} wrap={'wrap'}>
+      <Grid
+        container
+        justifyContent={"flex-start"}
+        alignItems="center"
+        spacing={2}
+        // gap={1}
+        mt={0.2}
+      >
         <PopularPlaceCard
           image={
-            'https://images.unsplash.com/photo-1506012787146-f92b2d7d6d96?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80'
+            "https://images.unsplash.com/photo-1506012787146-f92b2d7d6d96?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80"
           }
-          title={'adf'}
+          title={"adf"}
           description="descriptionalskdjfhlkajsdfh lkajsdfhlakjsdfh laklsjdfhlkajshf ;aklsjdflakjsdfh klaj"
           location="Dhaka"
           rating={2.2}
@@ -36,9 +49,31 @@ const PopularPlacesCard = () => {
         />
         <PopularPlaceCard
           image={
-            'https://images.unsplash.com/photo-1506012787146-f92b2d7d6d96?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80'
+            "https://images.unsplash.com/photo-1506012787146-f92b2d7d6d96?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80"
           }
-          title={'adf'}
+          title={"adf"}
+          description="descriptionalskdjfhlkajsdfh lkajsdfhlakjsdfh laklsjdfhlkajshf ;aklsjdflakjsdfh klaj"
+          location="Dhaka"
+          rating={2.2}
+          ratingCount={2312}
+          price={2123}
+        />
+        <PopularPlaceCard
+          image={
+            "https://images.unsplash.com/photo-1506012787146-f92b2d7d6d96?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80"
+          }
+          title={"adf"}
+          description="descriptionalskdjfhlkajsdfh lkajsdfhlakjsdfh laklsjdfhlkajshf ;aklsjdflakjsdfh klaj"
+          location="Dhaka"
+          rating={2.2}
+          ratingCount={2312}
+          price={2123}
+        />
+        <PopularPlaceCard
+          image={
+            "https://images.unsplash.com/photo-1506012787146-f92b2d7d6d96?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1169&q=80"
+          }
+          title={"adf"}
           description="description;lakjdfhkjasdhflkajsdfh alsdjfh aklsjhflakj"
           location="Dhaka"
           rating={2.2}
@@ -320,8 +355,8 @@ const PopularPlacesCard = () => {
           </Paper>
         </Grid> */}
       </Grid>
-    </Container>
-  )
-}
+    </Box>
+  );
+};
 
-export default PopularPlacesCard
+export default PopularPlacesCard;
