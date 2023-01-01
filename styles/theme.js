@@ -34,13 +34,13 @@ theme.typography.title = {
   fontWeight: "600",
   color: "#000",
   [theme.breakpoints.up("md")]: {
-    fontSize: "24px",
+    fontSize: "32px",
   },
   [theme.breakpoints.only("sm")]: {
-    fontSize: "1rem",
+    fontSize: "24px",
   },
   [theme.breakpoints.down("sm")]: {
-    fontSize: "1rem",
+    fontSize: "24px",
   },
 };
 
@@ -98,6 +98,17 @@ theme.typography.aboutNormal = {
   [theme.breakpoints.down("sm")]: {
     fontSize: "1rem",
   },
+};
+
+theme.typography.footerTitle = {
+  fontWeight: "600",
+  color: "#fff",
+  fontSize: "14px",
+};
+theme.typography.footerContent = {
+  fontWeight: "400",
+  color: "#fff",
+  fontSize: "14px",
 };
 
 export default theme;

@@ -47,6 +47,9 @@ const SliderContent = () => {
               color: "#fff",
               backgroundColor: "#000000a1",
               cursor: "pointer",
+              "&:hover": {
+                backgroundColor: "#000000a1",
+              },
             }}
             variant="contained"
           >

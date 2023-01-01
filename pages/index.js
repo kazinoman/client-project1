@@ -1,13 +1,14 @@
 import React from "react";
 
-import { Box, Container, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 
 import SliderContent from "@/components/sliderContent";
 import SliderCom from "@/components/slider";
 import AllCard from "@/components/basicBenefits/allCard";
 import PromotionCard from "../components/promotionCard/promotionCard";
-import PopularPlacesCard from "@/components/PopularPlaces/popularPlaces";
+import BestPlacesCard from "@/components/bestPlaces/popularPlaces";
 import HelpCenter from "@/components/helpCenter/helpCenter";
+import PopularPlaces from "@/components/popularPlace";
 
 const Home = () => {
   return (
@@ -32,11 +33,14 @@ const Home = () => {
 
       <AllCard />
 
+      {/* Best Places*/}
+      <BestPlacesCard />
+
       {/* Promotion card */}
       <PromotionCard />
 
-      {/* Popular Places*/}
-      <PopularPlacesCard />
+      {/* Popular cards */}
+      <PopularPlaces />
 
       {/* Help center */}
       <HelpCenter />
