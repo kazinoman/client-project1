@@ -13,7 +13,7 @@ const theme = createTheme({
     },
   },
   typography: {
-    fontFamily: "Roboto, Lato, sans-serif",
+    fontFamily: "Nunito, Roboto, Lato, sans-serif",
   },
 });
 
@@ -97,6 +97,20 @@ theme.typography.aboutNormal = {
   },
   [theme.breakpoints.down("sm")]: {
     fontSize: "1rem",
+  },
+};
+// fontWeight: "900", fontSize: { xs: "24px", sm: "30px" }
+theme.typography.aboutTitle = {
+  fontWeight: "900",
+  color: "#000",
+  [theme.breakpoints.up("md")]: {
+    fontSize: "30px",
+  },
+  [theme.breakpoints.only("md")]: {
+    fontSize: "30px",
+  },
+  [theme.breakpoints.down("sm")]: {
+    fontSize: "24px",
   },
 };
 

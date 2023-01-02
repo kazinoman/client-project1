@@ -2,13 +2,13 @@ import React from "react";
 
 import { Box } from "@mui/material";
 
-import SliderContent from "@/components/sliderContent";
-import SliderCom from "@/components/slider";
-import AllCard from "@/components/basicBenefits/allCard";
-import PromotionCard from "../components/promotionCard/promotionCard";
-import BestPlacesCard from "@/components/bestPlaces/popularPlaces";
-import HelpCenter from "@/components/helpCenter/helpCenter";
-import PopularPlaces from "@/components/popularPlace";
+import SliderContent from "@/components/home/sliderContent";
+import SliderCom from "@/components/home/slider";
+import AllCard from "@/components/home/basicBenefits/allCard";
+import PromotionCard from "../components/home/promotionCard/promotionCard";
+import BestPlacesCard from "@/components/home/bestPlaces/popularPlaces";
+import HelpCenter from "@/components/home/helpCenter/helpCenter";
+import PopularPlaces from "@/components/home/popularPlace";
 
 const Home = () => {
   return (

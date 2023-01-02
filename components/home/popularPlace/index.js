@@ -8,7 +8,7 @@ import {
   Stack,
   Box,
 } from "@mui/material";
-import Card from "../common/card";
+import Card from "../../common/card";
 
 const PopularPlaces = () => {
   return (

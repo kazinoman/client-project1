@@ -9,7 +9,7 @@ import {
 } from "@mui/material";
 
 import React from "react";
-import Card from "../common/card";
+import Card from "../../common/card";
 
 const BestPlacesCard = () => {
   return (
