@@ -13,7 +13,7 @@ const theme = createTheme({
     },
   },
   typography: {
-    fontFamily: "Roboto, Lato, sans-serif",
+    fontFamily: "Nunito, Roboto, Lato, sans-serif",
   },
 });
 
