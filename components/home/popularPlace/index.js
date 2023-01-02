@@ -16,15 +16,18 @@ const PopularPlaces = () => {
       maxWidth={"md"}
       disableGutters
       sx={{
-        my: 10,
+        my: { xs: 1, md: 4 },
+        px: { xs: "10px", md: "0px" },
         // pl: { xs: "10px", md: "0px" },
       }}
     >
-      <Typography variant="title">Best places to visit worldwide2</Typography>
+      <Typography variant="title">Best places to visit worldwide</Typography>
       <Box
         sx={{
-          //   px: 1,
-          p: 0.5,
+          //   px: 1
+          mt: 2,
+          py: 1,
+          pl: 0.2,
           display: "flex",
           flexDirection: { xs: "column", sm: "row" },
           flexWrap: "wrap",

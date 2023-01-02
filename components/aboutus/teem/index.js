@@ -46,7 +46,7 @@ const index = () => {
               <Button
                 variant="contained"
                 color="buttonColor"
-                sx={{ p: 2, color: "#fff" }}
+                sx={{ p: { xs: 1, md: 1 }, color: "#fff" }}
               >
                 Join the team
               </Button>

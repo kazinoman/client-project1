@@ -1,6 +1,7 @@
 import { Container, Paper, Typography, Stack } from "@mui/material";
 import Image from "next/image";
 import React from "react";
+import DiscoverPlaceLink from "../discoverPlacelink";
 
 const helpCenter = () => {
   return (
@@ -8,11 +9,10 @@ const helpCenter = () => {
       maxWidth={"md"}
       disableGutters
       sx={{
-        my: 5,
-        color: "#fff",
+        my: { xs: 1, md: 3 },
         display: "flex",
         flexDirection: "column",
-        rowGap: 6,
+        rowGap: 2,
         p: { xs: 2, sm: 0 },
       }}
     >
@@ -29,9 +29,12 @@ const helpCenter = () => {
           way to culture.
         </Typography>
       </Stack>
+
+      <DiscoverPlaceLink />
+
       <Paper
         sx={{
-          bgcolor: "#40e0d0",
+          bgcolor: "#29ab87",
           transitionDelay: 4,
           "&:hover": { bgcolor: "#1fcecb", transitionDelay: 4 },
           // height: '8rem',

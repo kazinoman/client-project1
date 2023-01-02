@@ -86,7 +86,7 @@ const index = () => {
               sx={{
                 color: "#fff",
                 mt: { xs: "0rem", sm: 3 },
-                p: 1.5,
+                p: { xs: 1, md: 1 },
                 textTransform: "none",
               }}
             >

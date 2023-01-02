@@ -9,6 +9,7 @@ import PromotionCard from "../components/home/promotionCard/promotionCard";
 import BestPlacesCard from "@/components/home/bestPlaces/popularPlaces";
 import HelpCenter from "@/components/home/helpCenter/helpCenter";
 import PopularPlaces from "@/components/home/popularPlace";
+import DiscoverPlaceLink from "@/components/home/discoverPlacelink";
 
 const Home = () => {
   return (
@@ -44,6 +45,9 @@ const Home = () => {
 
       {/* Help center */}
       <HelpCenter />
+
+      {/* Discover Place link  */}
+      {/* <DiscoverPlaceLink /> */}
     </div>
   );
 };

@@ -18,12 +18,14 @@ const BestPlacesCard = () => {
       disableGutters
       sx={{
         // my: 10,
-        pl: { xs: "10px", md: "5px" },
+        pl: { xs: "10px", md: "0px" },
+        mb: { xs: "10px", md: 5 },
       }}
     >
-      <Typography variant="title">Best places to visit worldwide1</Typography>
+      <Typography variant="title">Best places to visit worldwide</Typography>
       <Box
         sx={{
+          mt: 1,
           py: 1,
           px: 2,
           display: "flex",

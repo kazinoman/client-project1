@@ -1,6 +1,6 @@
 import { Button, Container, Typography } from "@mui/material";
 import React from "react";
-import InputBox from "@/components/inputBox";
+import InputBox from "@/components/home/inputBox";
 import { Stack } from "@mui/material";
 import { BiCurrentLocation } from "react-icons/bi";
 

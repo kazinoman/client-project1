@@ -44,7 +44,7 @@ const Informtion = () => {
                   <Button
                     variant="contained"
                     color="buttonColor"
-                    sx={{ color: "#fff" }}
+                    sx={{ color: "#fff", p: { xs: 1, md: 1.5 } }}
                   >
                     Explore the blog
                   </Button>
