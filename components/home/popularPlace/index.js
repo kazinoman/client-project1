@@ -27,6 +27,7 @@ const PopularPlaces = () => {
           //   px: 1
           mt: 2,
           py: 1,
+          pl: 0.2,
           display: "flex",
           flexDirection: { xs: "column", sm: "row" },
           flexWrap: "wrap",

@@ -44,6 +44,7 @@ const Header = () => {
           <Toolbar
             disableGutters
             sx={{
+              height: "5rem",
               justifyContent: "space-between",
               p: 0,
             }}
@@ -65,7 +66,7 @@ const Header = () => {
                     color="secondary"
                     disableElevation
                     disableRipple
-                    sx={{ color: "#fff" }}
+                    sx={{ color: "#fff", fontWeight: "700" }}
                   >
                     Home
                   </Button>
@@ -75,7 +76,7 @@ const Header = () => {
                     color="secondary"
                     disableElevation
                     disableRipple
-                    sx={{ color: "#fff" }}
+                    sx={{ color: "#fff", fontWeight: "700" }}
                   >
                     About
                   </Button>
@@ -85,7 +86,7 @@ const Header = () => {
                     color="secondary"
                     disableElevation
                     disableRipple
-                    sx={{ color: "#fff" }}
+                    sx={{ color: "#fff", fontWeight: "700" }}
                   >
                     Contact
                   </Button>
@@ -94,7 +95,7 @@ const Header = () => {
             </Hidden>
             <Hidden smUp>
               <IconButton color={"primary.main"} onClick={handleClick}>
-                <AiOutlineMenu />
+                <AiOutlineMenu style={{ color: "#fff" }} />
               </IconButton>
               <Menu
                 id="basic-menu"

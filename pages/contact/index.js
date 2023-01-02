@@ -44,20 +44,25 @@ const ContactPage = () => {
                 <Stack direction="row" gap={1}>
                   <Stack sx={{ width: "50%" }}>
                     <Typography>Your Name</Typography>
-                    <CustomInput placeholder="Your Name" />
+                    <CustomInput placeholder="Your Name" size="small" />
                   </Stack>
                   <Stack sx={{ width: "50%" }}>
                     <Typography>Your Email</Typography>
-                    <CustomInput placeholder="Your Email" />
+                    <CustomInput placeholder="Your Email" size="small" />
                   </Stack>
                 </Stack>
                 <Stack>
                   <Typography>Subject</Typography>
-                  <CustomInput placeholder="Subject" />
+                  <CustomInput placeholder="Subject" size="small" />
                 </Stack>
                 <Stack>
                   <Typography>Message</Typography>
-                  <CustomInput placeholder="message" multiline minRows={10} />
+                  <CustomInput
+                    placeholder="message"
+                    multiline
+                    minRows={10}
+                    size="small"
+                  />
                 </Stack>
                 <Button
                   variant="contained"
