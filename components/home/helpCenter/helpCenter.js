@@ -8,7 +8,7 @@ const helpCenter = () => {
       maxWidth={"md"}
       disableGutters
       sx={{
-        my: 5,
+        my: { xs: 1, md: 3 },
         color: "#fff",
         display: "flex",
         flexDirection: "column",
