@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Box } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import AOS from "aos";
 
 import UpperSection from "@/components/aboutus/upperSection";
@@ -11,6 +11,7 @@ import TeamInformation from "@/components/aboutus/teem";
 import TeamManagement from "@/components/aboutus/teamManagement";
 import Inspiration from "@/components/aboutus/inspiration";
 import LegalInformation from "@/components/aboutus/legalInfo";
+import SliderComponent from "@/components/aboutus/slider";
 
 const About = ({ data }) => {
   // console.log(data);
@@ -31,6 +32,23 @@ const About = ({ data }) => {
       <Offer />
 
       {/* slider bosbe */}
+      <Box
+        sx={{
+          // height: "40rem",
+          backgroundColor: "#fff",
+          width: { xs: "98%", sm: "98%", md: "98%", lg: "55%" },
+          mx: "auto",
+          py: 7,
+          // border: "1px solid black",
+        }}
+      >
+        <Box sx={{ textAlign: "center", mb: 2 }}>
+          <Typography variant="aboutTitle" align="center">
+            The Tiqets story
+          </Typography>
+        </Box>
+        <SliderComponent />
+      </Box>
 
       {/* Facts */}
       <Facts />
