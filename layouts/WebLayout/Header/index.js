@@ -11,40 +11,40 @@ import {
   Stack,
   Toolbar,
   Typography,
-} from '@mui/material'
-import React from 'react'
-import Image from 'next/image'
-import Link from 'next/link'
+} from "@mui/material";
+import React from "react";
+import Image from "next/image";
+import Link from "next/link";
 
-import { IoLogoAppleAr } from 'react-icons/io5'
-import { AiOutlineMenu } from 'react-icons/ai'
+import { IoLogoAppleAr } from "react-icons/io5";
+import { AiOutlineMenu } from "react-icons/ai";
 
 const Header = () => {
-  const [anchorEl, setAnchorEl] = React.useState(null)
-  const open = Boolean(anchorEl)
+  const [anchorEl, setAnchorEl] = React.useState(null);
+  const open = Boolean(anchorEl);
   const handleClick = (event) => {
-    setAnchorEl(event.currentTarget)
-  }
+    setAnchorEl(event.currentTarget);
+  };
   const handleClose = () => {
-    setAnchorEl(null)
-  }
+    setAnchorEl(null);
+  };
   function loader() {
-    return <h1>loading..</h1>
+    return <h1>loading..</h1>;
   }
   return (
     <>
       <AppBar
         elevation={0}
         sx={{
-          bgcolor: 'primary',
+          bgcolor: "primary",
         }}
         position="static"
       >
-        <Container maxWidth={'lg'} disableGutters>
+        <Container maxWidth={"md"} disableGutters>
           <Toolbar
             disableGutters
             sx={{
-              justifyContent: 'space-between',
+              justifyContent: "space-between",
               p: 0,
             }}
             elevation={0}
@@ -57,28 +57,43 @@ const Header = () => {
             >
               <IoLogoAppleAr />
             </Avatar> */}
-            <Image src={'/icon2.png'} height={40} width={70} />
+            <Image src={"/icon2.png"} height={40} width={70} />
             <Hidden smDown>
-              <Stack direction={'row'}>
+              <Stack direction={"row"}>
                 <Link href="/">
-                  <Button color="secondary" disableElevation disableRipple>
+                  <Button
+                    color="secondary"
+                    disableElevation
+                    disableRipple
+                    sx={{ color: "#fff" }}
+                  >
                     Home
                   </Button>
                 </Link>
                 <Link href="/about">
-                  <Button color="secondary" disableElevation disableRipple>
+                  <Button
+                    color="secondary"
+                    disableElevation
+                    disableRipple
+                    sx={{ color: "#fff" }}
+                  >
                     About
                   </Button>
                 </Link>
                 <Link href="/contact">
-                  <Button color="secondary" disableElevation disableRipple>
+                  <Button
+                    color="secondary"
+                    disableElevation
+                    disableRipple
+                    sx={{ color: "#fff" }}
+                  >
                     Contact
                   </Button>
                 </Link>
               </Stack>
             </Hidden>
             <Hidden smUp>
-              <IconButton color={'primary.main'} onClick={handleClick}>
+              <IconButton color={"primary.main"} onClick={handleClick}>
                 <AiOutlineMenu />
               </IconButton>
               <Menu
@@ -88,26 +103,26 @@ const Header = () => {
                 onClose={handleClose}
                 PaperProps={{
                   sx: {
-                    width: '50vw',
-                    maxWidth: '12rem',
+                    width: "50vw",
+                    maxWidth: "12rem",
                     mt: 2.5,
-                    overflow: 'visible',
-                    '&:before': {
+                    overflow: "visible",
+                    "&:before": {
                       content: '""',
-                      display: 'block',
-                      position: 'absolute',
+                      display: "block",
+                      position: "absolute",
                       top: 0,
                       right: 30,
                       width: 10,
                       height: 10,
-                      bgcolor: 'background.paper',
-                      transform: 'translateY(-50%) rotate(45deg)',
+                      bgcolor: "background.paper",
+                      transform: "translateY(-50%) rotate(45deg)",
                       zIndex: 0,
                     },
                   },
                 }}
                 MenuListProps={{
-                  'aria-labelledby': 'basic-button',
+                  "aria-labelledby": "basic-button",
                 }}
               >
                 <MenuItem onClick={handleClose}>
@@ -132,7 +147,7 @@ const Header = () => {
         }
       />
     </>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
