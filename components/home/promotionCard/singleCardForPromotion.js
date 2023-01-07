@@ -15,13 +15,13 @@ const SingleCardForPromotion = ({ image, title, details }) => {
     <Paper
       sx={{
         width: {
-          xs: "50%",
+          xs: "100%",
           //   xs: popularPlace ? "98%" : "90%",
-          sm: "38%",
-          md: "40%",
-          lg: "48%",
+          sm: "100%",
+          md: "100%",
+          lg: "100%",
         },
-        minWidth: "200px",
+        minWidth: "250px",
         cursor: "pointer",
         "&:hover": {
           boxShadow:
@@ -69,11 +69,15 @@ const SingleCardForPromotion = ({ image, title, details }) => {
                   maxHeight: "90px",
                   overflow: "hidden",
                   textOverflow: "ellipsis",
+                  textOverflow: "ellipsis",
                   display: "-webkit-box",
-                  "&::-webkit-line-clamp": 2,
+                  WebkitLineClamp: "3",
+                  WebkitBoxOrient: "vertical",
+                  // WebkitLineClamp: 2,
+                  // webkitBox
                   // webkitLineClamp: 2 /* number of lines to show */,
-                  "&::-line-clamp": 2,
-                  "&::-webkit-box-orient": "vertical",
+                  // "&::-line-clamp": 2,
+                  // "&::-webkit-box-orient": "vertical",
                 }}
               >
                 {details}

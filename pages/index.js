@@ -1,15 +1,24 @@
 import React from "react";
 
 import { Box } from "@mui/material";
+import { SwiperSlide } from "swiper/react";
 
 import SliderContent from "@/components/home/sliderContent";
 import SliderCom from "@/components/home/slider";
 import AllCard from "@/components/home/basicBenefits/allCard";
-import PromotionCard from "../components/home/promotionCard/promotionCard";
+// import PromotionCard from "../components/home/promotionCard/promotionCard";
 import BestPlacesCard from "@/components/home/bestPlaces/popularPlaces";
 import HelpCenter from "@/components/home/helpCenter/helpCenter";
 import PopularPlaces from "@/components/home/popularPlace";
 import DiscoverPlaceLink from "@/components/home/discoverPlacelink";
+import dynamic from "next/dynamic";
+const PromotionCard = dynamic(
+  () => import("@/components/home/promotionCard/promotionCard"),
+  {
+    ssr: false,
+  }
+);
+// import SliderComponent, { SwiperSliderCom } from "@/components/common/slider";
 
 const Home = () => {
   return (

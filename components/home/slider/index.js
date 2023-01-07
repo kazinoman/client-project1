@@ -75,7 +75,6 @@ const SliderCom = () => {
           />
         </SwiperSlide>
         <SwiperSlide>
-          {" "}
           <Image
             layout="fill"
             objectFit="cover"
